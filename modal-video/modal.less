@@ -1,0 +1,28 @@
+// Simplemodal Modal Windows
+.simplemodal {
+	box-shadow: @box-shadow-x-base @box-shadow-y-base @box-shadow-blur-base @box-shadow-spread-base #000;
+	display: none;
+	
+	iframe {
+		display: block;
+	}
+}
+.simplemodal-close {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 50%;
+	box-shadow: @box-shadow-x-base @box-shadow-y-base @box-shadow-blur-base @box-shadow-spread-base #000;
+	color: #555;
+	font-size: 32px;
+	line-height: 30px;
+	text-align: center;
+	text-indent: 1px;
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	
+	&:hover {
+		color: @link-hover-color;
+	}
+}
